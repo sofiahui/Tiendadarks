@@ -33,8 +33,8 @@ p{
     50% { background-position: 100% 50%; }
     100% { background-position: 0 50%; }
 }
-title {
-    font-family: 'Creepster', cursive;
+h1 {
+    font-family: 'extrabold', sans-serif;
     color: #0b070e;
     text-align: center;
     margin-top: 20px;
