@@ -1,31 +1,84 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>Tienda de ropa</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">                                       
+    <title>Tienda de ropa</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/CSS/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
 </head>
 
 <body>
-    <h1>Sleepy Hollow</h1>       
-    <img src="./photos/logo.png.jpeg" alt="Logo de Sleepy Hollow" width="200" height="200">     <button>Iniciar sesion</button>  <button>Registrarse</button>   
-    <p>Sleepy Hollow es una tienda online de ropa y accesorios dark creada para almas que caminan entre la penumbra y la elegancia. Inspirada en el misterio eterno del bosque embrujado y en la estética gótica más auténtica, aquí encontrarás prendas, joyería y detalles que celebran lo oscuro, lo alternativo y lo atemporal. Cada pieza está pensada para quienes hacen de la noche su refugio y del estilo un manifiesto de identidad.
-    </p>
-    <img src="./photos/ropa1.jpeg" alt="Ropa oscura">
-    <button>Comprar</button>
+
+<div id="banner-anuncios" class="top-banner text-center">
+    🚚 Contaremos con despacho gratis para comunas seleccionadas de la RM
+</div>
+
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+    <div class="container-fluid d-flex justify-content-center">
+
+        <!-- Botón menú móvil (solo visible en pantallas chicas) -->
+        <button class="navbar-toggler d-lg-none me-auto" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Grupo centrado (solo en desktop) -->
+        <div class="d-none d-lg-flex align-items-center text-center">
+            <a id="contacto-nav" class="nav-link px-3" href="#">Contacto</a>
+            <a id="logo-brand-nav" class="navbar-brand mx-3" href="#">Sleepy Hollow</a>
+            <a id="about-nav" class="nav-link px-3" href="#">Quienes somos</a>
+        </div>
+
+        <!-- Logo centrado en mobile -->
+        <div class="d-lg-none flex-grow-1 text-center">
+            <a id="logo-brand-nav" class="navbar-brand" href="#">Sleepy Hollow</a>
+        </div>
+
+    </div>
+
+    <!-- Offcanvas (menú lateral en móvil, oculto en desktop) -->
+    <div class="offcanvas offcanvas-start bg-dark text-white d-lg-none" tabindex="-1" id="offcanvasNavbar"
+         aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a id="contacto-nav-mobile" class="nav-link" href="#">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a id="about-nav-mobile" class="nav-link" href="#">Quienes somos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
 
 
 
+<h1>Sleepy Hollow</h1>
+<img src="./photos/logo.png.jpeg" alt="Logo de Sleepy Hollow" width="200" height="200">
+<button>Iniciar sesion</button>
+<button>Registrarse</button>
+<p>Sleepy Hollow es una tienda online de ropa y accesorios dark creada para almas que caminan entre la penumbra y la
+    elegancia. Inspirada en el misterio eterno del bosque embrujado y en la estética gótica más auténtica, aquí
+    encontrarás prendas, joyería y detalles que celebran lo oscuro, lo alternativo y lo atemporal. Cada pieza está
+    pensada para quienes hacen de la noche su refugio y del estilo un manifiesto de identidad.
+</p>
+<img src="./photos/ropa1.jpeg" alt="Ropa oscura">
+<button>Comprar</button>
 
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
-
-
-
-
-
-
 
 
 </html>
