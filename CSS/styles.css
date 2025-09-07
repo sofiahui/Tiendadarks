@@ -1,0 +1,29 @@
+#logo-brand-nav {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#about-nav, #contacto-nav {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+#banner-anuncios {
+    background: linear-gradient(90deg, #6f42c1, #8e44ad, #4b2354, #6f42c1);
+    background-size: 400% 400%;
+    color: #fff;
+    font-size: 14px;
+    padding: 4px 0;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    letter-spacing: 0.5px;
+    animation: morado-gradient 8s ease infinite;
+}
+
+@keyframes morado-gradient {
+    0% { background-position: 0 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0 50%; }
+}
