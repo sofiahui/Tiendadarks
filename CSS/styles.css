@@ -1,5 +1,5 @@
 * {
-    font-family: 'Cinzel', serif!important;
+    font-family: 'Cinzel', serif !important;
 }
 
 
@@ -13,15 +13,16 @@
     color: white;
     font-weight: bold;
     font-size: 18px;
-p{
-    font-family: 'bold', sans-serif;
-    color: #333;
-    line-height: 1.6;
-    margin: 20px;
-    text-align: center;
-    font-size: 18px;
-    max-width: 600px;
-}
+
+    p {
+        font-family: 'bold', sans-serif;
+        color: #333;
+        line-height: 1.6;
+        margin: 20px;
+        text-align: center;
+        font-size: 18px;
+        max-width: 600px;
+    }
 
 }
 
@@ -37,10 +38,17 @@ p{
 }
 
 @keyframes morado-gradient {
-    0% { background-position: 0 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0 50%; }
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
 }
+
 h1 {
     font-family: 'extrabold', sans-serif;
     color: #0b070e;
@@ -54,6 +62,54 @@ h1 {
     color: #bfa5e2;
     letter-spacing: 2px;
     padding: 10px;
+}
+
+/* -------------------------
+   ESTILOS GENERALES
+
+ */
+#title-header {
+    font-family: 'Cinzel', serif;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px #000;
+}
+
+#subtitle-header {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 6px #000;
+}
+
+#contador-regresivo {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: rgba(34, 34, 34, 0.7);
+    border-radius: 12px;
+    display: inline-block;
+    padding: 12px 28px;
+    box-shadow: 0 2px 8px #000;
+}
+
+
+/* -------------------------
+   SECCIONES formulario
+
+ */
+
+#title-form {
+    min-width: 350px;
+    max-width: 500px;
+    border: 3px solid #343a40;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    background: #222;
+    color: #fff;
+}
+
+#subtitle-form {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
 }
 
 /* -------------------------
@@ -156,4 +212,27 @@ footer {
     padding: 20px;
     text-align: center;
     color: #e0d5f5;
+
+}
+
+#footer {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 2px;
+    border-top: 3px solid #343a40;
+    box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.25);
+}
+
+#title-footer {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px #000;
+}
+
+#content-footer {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+#iconos-footer-darks {
+    font-size: 1.2rem;
 }

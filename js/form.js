@@ -14,18 +14,17 @@ function mostrarModal(mensaje) {
         modal.id = 'modal-validacion';
         modal.className = 'modal fade';
         modal.innerHTML = `
-                                                                <div class="modal-dialog">
-                                                                    <div class="modal-content bg-dark text-white">
-                                                                        <div class="modal-header">
-                                                                            <h5 class="modal-title">Atención</h5>
-                                                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" id="cerrar-modal"></button>
-                                                                        </div>
-                                                                        <div class="modal-body">
-                                                                                                <p id="modal-mensaje"></p>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                `;
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title">Atención</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" id="cerrar-modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="modal-mensaje"></p>
+                </div>
+            </div>
+        </div>`;
         document.body.appendChild(modal);
     }
     document.getElementById('modal-mensaje').textContent = mensaje;
@@ -73,6 +72,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
         actualizarContador();
         mostrarModal('¡Formulario enviado correctamente!');
+        verificarEnvioGratis();
         form.reset();
     });
 });
+
+
+
+
+function mostrarMensajeEnvioGratis(esGratis) {
+    const mensajeDiv = document.getElementById('mensaje-envio-gratis');
+    if (esGratis) {
+        mensajeDiv.textContent = '¡Tu envío es gratis en esta comuna!';
+    } else {
+        mensajeDiv.textContent = '';
+    }
+}
+
+function verificarEnvioGratis() {
+    const region = document.getElementById('region').value;
+    const comuna = document.getElementById('comuna').value.trim().toLowerCase();
+    const comunasGratis = ['ñuñoa', 'providencia', 'las condes', 'la reina', 'macul'];
+    const esGratis = region === 'Región Metropolitana de Santiago' && comunasGratis.includes(comuna);
+    mostrarMensajeEnvioGratis(esGratis);
+}
+
+// Llama a la función al cambiar región o comuna
+document.getElementById('region').addEventListener('change', verificarEnvioGratis);
+document.getElementById('comuna').addEventListener('input', verificarEnvioGratis);
