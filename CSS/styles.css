@@ -55,3 +55,105 @@ h1 {
     letter-spacing: 2px;
     padding: 10px;
 }
+
+/* -------------------------
+   PRODUCTOS
+------------------------- */
+.producto {
+    background: #cfc9d4;
+    border: 2px solid #6f42c1;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 280px;
+    box-shadow: 0 0 20px rgba(111, 66, 193, 0.4);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 35px rgba(142, 68, 173, 0.8);
+}
+
+.producto img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Botones */
+button {
+    background: linear-gradient(90deg, #6f42c1, #4b2354);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Montserrat', cursive;
+
+}
+
+button:hover {
+    background: linear-gradient(90deg, #8e44ad, #6f42c1);
+    box-shadow: 0 0 15px rgba(191, 165, 226, 0.8);
+}
+
+/* -------------------------
+   CARRITO
+------------------------- */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 90%;
+    background: #18121f;
+    border-radius: 15px;
+    overflow: hidden;
+    font-family: 'Montserrat', cursive;
+}
+
+th, td {
+    border: 1px solid #6f42c1;
+    padding: 12px;
+    text-align: center;
+    color: #e0d5f5;
+    font-family: 'Montserrat', cursive;
+}
+
+th {
+    background: #4b2354;
+    color: #fff;
+}
+
+#total {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #bfa5e2;
+    text-align: center;
+    font-family: 'Montserrat', cursive;
+}
+
+/* -------------------------
+   LINKS Y FOOTER
+------------------------- */
+a {
+    color: #bfa5e2;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #6f42c1;
+}
+
+footer {
+    background: #0e0a12;
+    border-top: 3px solid #6f42c1;
+    padding: 20px;
+    text-align: center;
+    color: #e0d5f5;
+}

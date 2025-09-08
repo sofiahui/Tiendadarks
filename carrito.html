@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Carrito - Sleepy Hollow</title>
+  <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body>
+    <div id="banner-anuncios" class="top-banner text-center">
+    🚚 Contaremos con despacho gratis para comunas seleccionadas de la RM
+    </div>
+
+  <h1>🛒 Tu Carrito</h1>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Producto</th>
+        <th>Precio</th>
+        <th>Cantidad</th>
+        <th>Subtotal</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="lista-carrito"></tbody>
+  </table>
+
+  <h2 id="total">Total: $0</h2>
+
+  <button onclick="finalizarCompra()">✅ Finalizar Compra</button>
+  <a href="productos.html">⬅ Volver a la tienda</a>
+
+  <div id="resumen-compra"></div>
+
+  <script src="./js/carrito.js"></script>
+</body>
+</html>
+  

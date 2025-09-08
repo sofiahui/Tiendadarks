@@ -4,33 +4,62 @@
       <title>Productos Sleppy Hollow</title>
       <link rel="stylesheet" type="text/css" href="./CSS/styles.css">
 <body>
+    
+   <div id="banner-anuncios" class="top-banner text-center">
+    🚚 Contaremos con despacho gratis para comunas seleccionadas de la RM
+    </div>
+
+
+
    <h1>Productos</h1>
-   <div class="product">
+   <div class="producto">
       <h2>Vestido Gotico</h2>
       <p>Vestido Lycra</p>
       <p>Precio: $20.000</p>
       <img src="./photos/vestido.jpeg" alt="Vestido Gotico" width="200" height="300">
-      <button> Agregar al carrito</button>
+      <button onclick="agregarAlCarrito(1, 'Vestido Gótico', 20000)">Agregar al carrito</button>
    </div>
 
-   <div class="product">
+   <div class="producto">
       <h2>Zapatos Plataforma</h2>
       <p>Zapatos de plataforma con detalles metálicos.</p>
       <p>Precio: $30.000</p>
-      <img src="./photos/zapatos.jpeg" alt="Zapatos Plataforma" width="200" height="200">
-      <button>Agregar al carrito</button>
+      <img src="./photos/zapatos.jpeg" alt="Zapatos Plataforma" width="300" height="300">
+      <button onclick="agregarAlCarrito(2, 'Zapatos Plataforma', 30000)">Agregar al carrito</button>
    </div>
 
 
-   <div class="accesorios">
+   <div class="producto">
       <h2>Collar de Cruz</h2>
       <p>Collar con colgante de cruz en plata envejecida.</p>
       <p>Precio: $5.000</p>
       <img src="./photos/collar.jpeg" alt="Collar de Cruz" width="200" height="200">
-       <button>Agregar al carrito</button>
+      <button onclick="agregarAlCarrito(3, 'Collar de Cruz', 5000)">Agregar al carrito</button>
    </div>
 
 
+
+    <a href="carrito.html">🛒 Ver Carrito</a>
+
+
+    <footer class="bg-dark text-white py-4 mt-5" style="font-family: 'Cinzel', serif; letter-spacing: 2px; border-top: 3px solid #343a40; box-shadow: 0 -4px 16px rgba(0,0,0,0.25);">
+    <div class="container text-center">
+        <h5 style="font-size: 1.5rem; font-weight: bold; text-shadow: 2px 2px 8px #000;">Sleepy Hollow</h5>
+        <p style="font-size: 1rem; opacity: 0.8;">
+            &copy; 2024 Sleepy Hollow. Tienda gótica para almas nocturnas.<br>
+            Síguenos en <a href="#" class="text-decoration-none text-secondary">Instagram</a> y <a href="#" class="text-decoration-none text-secondary">Facebook</a>
+        </p>
+        <div style="font-size: 1.2rem;">
+            <i class="bi bi-moon-stars-fill"></i>
+            <i class="bi bi-heart-fill"></i>
+            <i class="bi bi-gem"></i>
+        </div>
+    </div>
+</footer>
+    
+
+
+    <script src="./js/carrito.js"></script>
 
 
 
