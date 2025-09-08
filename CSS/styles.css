@@ -1,3 +1,8 @@
+* {
+    font-family: 'Cinzel', serif!important;
+}
+
+
 #logo-brand-nav {
     color: white;
     font-weight: bold;
@@ -41,4 +46,12 @@ h1 {
     color: #0b070e;
     text-align: center;
     margin-top: 20px;
+}
+
+#pre-inscripcion-text {
+    font-family: 'Montserrat', cursive;
+    font-size: 1.5rem;
+    color: #bfa5e2;
+    letter-spacing: 2px;
+    padding: 10px;
 }
