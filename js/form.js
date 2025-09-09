@@ -96,7 +96,3 @@ function verificarEnvioGratis() {
     const esGratis = region === 'Región Metropolitana de Santiago' && comunasGratis.includes(comuna);
     mostrarMensajeEnvioGratis(esGratis);
 }
-
-// Llama a la función al cambiar región o comuna
-document.getElementById('region').addEventListener('change', verificarEnvioGratis);
-document.getElementById('comuna').addEventListener('input', verificarEnvioGratis);
